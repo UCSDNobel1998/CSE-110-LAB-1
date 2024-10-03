@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+/* Hover effect for nav items */
+nav ul li a:hover {
+    background-color: #182b49;
+    color: white;
+}
+
+/* Clear floats after the nav items */
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Sections */
+.section {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-margin-top: 60px; 
+}
+
+/* Section 1 */
+.section1 {
+    background-color: rgb(245, 240, 230);
+}
+
+/* Section 2 */
+.section2 {
+    background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.section2 h2,
+.section2 p {
+    color: white;
+}
+
+/* Section 3 */
+.section3 {
+    background-color: rgb(245, 240, 230);
+}
+
+/* Grid in Section 3 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grid-item {
+    background-color: #182b49;
+    color: white;
+    padding: 20px;
+    max-height: 500px;
+    overflow: scroll;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Paragraph Text */
+.section p {
+    font-size: 28px;
+}
